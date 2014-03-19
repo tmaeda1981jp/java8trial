@@ -13,10 +13,17 @@ public class FilterSample {
             new Person("Tadashi", 22)
         };
         List<Person> list = Arrays.asList(values);
+//        Person[] overThirties = list.stream()
         list.stream()
 //                .filter(person -> person.getName().startsWith("T"))
                 .filter(person -> person.getAge() >= 30)
                 .forEach(System.out::println);
+//                .toArray(Person[]::new);
+        
+//        for (Person person: overThirties) {
+//            System.out.println(person);
+//        }
+            
     }
 
     static class Person {
