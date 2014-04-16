@@ -1,4 +1,4 @@
-package jp.smilecode.java8trial.stream;
+package jp.smilecode.java8trial;
 
 import java.util.function.Function;
 

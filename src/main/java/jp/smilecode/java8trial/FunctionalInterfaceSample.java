@@ -1,4 +1,4 @@
-package jp.smilecode.java8trial.stream;
+package jp.smilecode.java8trial;
 
 public class FunctionalInterfaceSample {
     interface Counter { int count(String s1, String s2); }
