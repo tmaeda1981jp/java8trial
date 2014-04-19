@@ -14,7 +14,7 @@ public class InterfaceDefaultMethodSample {
         // ((Printable)(str) -> System.out.printf("[[ %s ]]\n", str)).print("hoge");
         
         // こちらは関数型インターフェースなのでこの書き方でOK
-        ((Writable) (str) -> System.out.printf("[[ %s ]]\n", str)).write("hoge");
+        ((Writable) str -> System.out.printf("[[ %s ]]\n", str)).write("hoge");
     }
 }
 
