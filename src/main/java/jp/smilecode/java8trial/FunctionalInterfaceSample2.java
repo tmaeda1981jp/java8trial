@@ -9,7 +9,7 @@ public class FunctionalInterfaceSample2 {
         Date date = f1.apply();
         System.out.println(date);
         
-        Function2<String> f2 = (str) -> new String(str);
+        Function2<String> f2 = (str) -> (str);
         String str = f2.apply("test");
         System.out.println(str);
     }
