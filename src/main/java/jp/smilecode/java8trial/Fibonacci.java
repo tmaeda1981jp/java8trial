@@ -14,6 +14,7 @@ public class Fibonacci {
     
     public static int fibonacci(int n) {
         // 指定のキーが存在しない場合はlambdaの内容でappendする
+        // 存在する場合はその値を返す
         return fibonacciSequence.computeIfAbsent(n, i -> {
             // Math#addExactは桁あふれを検知する
             return Math.addExact(fibonacci(i-1), fibonacci(i-2));
