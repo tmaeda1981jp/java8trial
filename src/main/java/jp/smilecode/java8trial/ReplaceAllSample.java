@@ -9,13 +9,13 @@ public class ReplaceAllSample {
         List<String> list = Arrays.asList("a", "b", "c");
         list.replaceAll(s -> s.toUpperCase());
         System.out.println(list);
-        
-        HashMap<String, String> map = new HashMap();
+
+        HashMap<String, String> map = new HashMap<>();
         map.put("A", "ABC");
         map.put("B", "BCD");
         map.put("C", "CDE");
 
         map.replaceAll((k, v) -> v.toLowerCase());
-        System.out.println(map);        
+        System.out.println(map);
     }
 }
