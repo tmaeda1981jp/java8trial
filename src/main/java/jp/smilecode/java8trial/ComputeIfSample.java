@@ -7,15 +7,15 @@ import java.util.Map;
 public class ComputeIfSample {
 
     static Map<String, String> createMap() {
-        Map<String, String> map = new HashMap();
+        Map<String, String> map = new HashMap<>();
         map.put("a", "abc");
         map.put("b", "bcd");
         map.put("c", "cde");
         return map;
     }
-    
+
     public static void main(String[] args) {
-        
+
         Map<String, String> map = createMap();
         Arrays.asList("a", "c", "f").stream()
                 .forEach(key -> {
@@ -23,7 +23,7 @@ public class ComputeIfSample {
                     map.computeIfPresent(key, (k, v) -> v.toUpperCase());
                 });
         System.out.println(map);
-        
+
         Map<String, String> map2 = createMap();
         Arrays.asList("a", "c", "d", "f").stream()
                 .forEach(key -> {

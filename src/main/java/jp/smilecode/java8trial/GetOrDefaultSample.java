@@ -5,11 +5,11 @@ import java.util.Map;
 
 public class GetOrDefaultSample {
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap();
+        Map<String, String> map = new HashMap<>();
         map.put("a", "abc");
         map.put("b", "bcd");
         map.put("c", "cde");
-        
+
         System.out.println(map.get("a"));
         System.out.println(map.get("b"));
         System.out.println(map.get("c"));
